@@ -1,0 +1,207 @@
+@font-face{
+    font-family: 'Street';
+    src: url('./Font/street.otf');
+}
+
+:root{
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    background-image: url('./img/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1{
+    font-family: 'street';
+    color:crimson;
+    font-size:46px;
+    text-align: center;
+}
+
+table{
+    width:600px;
+    height: 800px;
+    border: 10px, outset, rgb(237,175,5);
+    border-radius: 10px;
+    background-color:black;
+    margin:auto;
+    
+}
+
+#cabecera-tabla{
+    background-image: url('./img/fondocabecera.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    font-family: 'street';
+    text-align:center;
+    font-size: 40px;
+    color:whitesmoke;
+    opacity: 0.5;
+}
+
+table td{
+    border: solid rgb(255, 0, 0) 2px;
+    width: 40px;
+    height: 45px;
+    border: solid 2px gray;
+    font-family: 'street';
+    color: darkorange;
+    text-align:center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#KEN{
+    background-image: url('./img/ken.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#CHUN{
+    background-image: url('./img/ChunLi.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#ZANG{
+    background-image: url('./IMG/Zangief.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#DHALSIN{
+    background-image: url('./img/Dhalsim.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#RYU{
+    background-image: url('./img/Ryu.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#HONDA{
+    background-image: url('./img/EHonda.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#BLANKA{
+    background-image: url('./img/Blanka.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#GUILLE{
+    background-image: url('./img/Guille.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+#HAWK{
+    background-image: url('./img/THawk.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#FEILONG{
+    background-image: url('./img/Feilong.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#DEE{
+    background-image: url('./img/DeeJay.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#CAMMY{
+    background-image: url('./img/Cammy.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+#BALROG{
+    background-image: url('./img/Balrog.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#VEGA{
+    background-image: url('./img/Vega.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#SAGAT{
+    background-image: url('./img/Sagat.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#MBISON{
+    background-image: url('./img/MBison.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Formulario */
+form{
+    background-color: black;
+    width: 600px;
+    height: 1100px;
+    border: 10px outset rgb(237,175,5);
+    color:white;
+    text-align:center;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    margin:auto;
+    text-align:left;
+}
+
+legend{
+    font-family: 'street';
+    font-size: 14px;
+    color: rgb(237, 175, 5);
+    text-align:left;
+}
+
+input{
+    margin-bottom: 10px;
+    
+}
+
+textarea{
+    width: 560px;
+}
+
+h2 {
+    font-family: 'street';
+    color:crimson;
+    font-size: 28px;
+    text-align: center;
+}
+
+#botones input{
+    border: 1px solid crimson;
+    background-color: crimson;
+    font-family: 'street';
+    font-size: 18px;
+    color:white;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 65px;
+    margin-bottom: 10px;
+    display:inline-block;
+}
+
+
