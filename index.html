@@ -9,7 +9,6 @@
     <title>StreetFighter UNIR</title>
 </head>
 
-<!-- os habéis colado con el tiempo-->
 <body>
 
     <h1>TO LIVE IS TO FIGHT, TO FIGHT IS TO LIVE!</h1>
@@ -19,71 +18,72 @@
             <td colspan="4" id="cabecera-tabla">
                 <p>STREET FIGHTER</p>
             </td>
-            
         </tr>
 
         <tr>
             <td id="KEN">
-                <p>KEN</p>
+                <p class="titulo-celdas">KEN</p>
             </td>
 
             <td id="CHUN">
-                <p>CHUN U</p>
+                <p class="titulo-celdas">CHUN U</p>
             </td>
 
             <td id="ZANG">
-                <p>2ANGIEF</p>
+                <p class="titulo-celdas">ZANGIEF</p>
             </td>
 
             <td id="DHALSIN">
-                <p>DHALSIN</p>
+                <p class="titulo-celdas">DHALSIN</p>
             </td>
         </tr>
 
         <tr>
             <td id="RYU">
-                <p>RYU</p>
+                <p class="titulo-celdas">RYU</p>
             </td>
             <td id="HONDA">
-                <p>E HONDA</p>
+                <p class="titulo-celdas">E HONDA</p>
             </td>
             <td id="BLANKA">
-                <p>BLANKA</p>
+                <p class="titulo-celdas">BLANKA</p>
             </td>
             <td id="GUILLE">
-                <p>GUILLE</p>
+                <p class="titulo-celdas">GUILLE</p>
             </td>
         </tr>
 
         <tr>
             <td id="HAWK">
-                <p>T HAWK</p>
+                <p class="titulo-celdas">T HAWK</p>
             </td>
             <td id="FEILONG">
-                <p>FEILONG</p>
+                <p class="titulo-celdas">FEILONG</p>
             </td>
             <td id="DEE">
-                <p>DEE JAY</p>
+                <p class="titulo-celdas">DEE JAY</p>
             </td>
             <td id="CAMMY">
-                <p>CAMMY</p>
+                <p class="titulo-celdas">CAMMY</p>
             </td>
         </tr>
 
         <tr>
             <td id="BALROG">
-                <p>BALROG</p>
+                <p class="titulo-celdas">BALROG</p>
             </td>
             <td id="VEGA">
-                <p>VEGA</p>
+                <p class="titulo-celdas">VEGA</p>
             </td>
             <td id="SAGAT">
-                <p>SAGAT</p>
+                <p class="titulo-celdas">SAGAT</p>
             </td>
             <td id="MBISON">
-                <p>MBISON</p>
+                <p class="titulo-celdas">MBISON</p>
             </td>
         </tr>
+        </div>
+        
     </table>
 
     <h2>FORMULARIO DE INSCRIPCIÓN PARA JUGAR A STREET FIGHTER</h2>
@@ -94,70 +94,73 @@
 
             <label for="">Nombre:</label>
             <input type="text" name="">
-            <br>
 
             <label for="">Apellidos</label>
             <input type="text" name="">
-            <br>
 
-            <label for="">Dirección Postal:</label>
-            <input type="text" name="">
-            <br>
-            <input type="text" name="">
-            <input type="text" name="">
-            <input type="text" name="">
-            <input type="text" name="">
-            <br>
+            <div id="direccion-postal">
+                <label for="direccion">Dirección Postal: <br>
+                    <input type="text" name="direccion" placeholder="Calle">
+                    <input type="text" name="direccion" placeholder="Nº">
+                    <input type="text" name="direccion" placeholder="Piso">
+                    <input type="text" name="direccion" placeholder="Cód. Postal">
+                    <input type="text" name="direccion" placeholder="Ciudad">
+                </label>
+            </div>
+            
+            <label for="nick">Nick:</label>
+            <input type="text" name="nick">
 
-            <label for="">Nick:</label>
-            <input type="text" name="">
-            <br>
-
-            <label for="">Correo Electrónico:</label>
-            <input type="text" name="">
-
+            <label for="email">Correo Electrónico:</label>
+            <input type="text" name="email">
         </fieldset>
 
         <fieldset>
             <legend>SEXO USUARIO</legend>
 
-            <label for="sexo">Hombre</label>
-            <input type="radio" name="sexo" value="hombre">
-            <br>
+            <div id="sexo">
+                <label for="sexo">
+                    <input type="radio" name="sexo" value="hombre" checked> Hombre <br>
+                </label>
 
-            <label for="sexo">Mujer</label>
-            <input type="radio" name="sexo" value="mujer">
-            <br>
+                <label for="sexo">
+                    <input type="radio" name="sexo" value="mujer"> Mujer <br>
+                </label>
+                
+                <label for="sexo">
+                    <input type="radio" name="sexo" value="nada"> Prefiero no decirlo
+                </label>
+            </div>
+        </fieldset>
 
-            <label for="sexo">Prefiero no decirlo</label>
-            <input type="radio" name="sexo" value="nada">
-            <br>
+        <fieldset>
+            <label for="fecha" id="fecha"> Fecha de nacimiento:
+                <input type="date" name="fecha"> 
+            </label>
             
         </fieldset>
 
         <fieldset>
-            <label for="fecha">Fecha de nacimiento:</label>
-            <input type="date" name="fecha" >
-
-        </fieldset>
-
-        <fieldset>
             <legend>PERSONAJES</legend>
-            <label for="personaje"></label>
-            <input type="text" name="personaje">
-
+            <label for="personaje">Selecciona el personaje:
+                <select name="opcion" id="opcion">
+                    <option value="1">KEN</option>
+                    <option value="2">CHUN U</option>
+                    <option value="3">ANGIEF</option>
+                </select>
+            </label>
         </fieldset>
 
         <fieldset>
             <legend>COMENTARIOS</legend>
             <label for=""></label>
-            <input type="">
-
+            <textarea></textarea>
         </fieldset>
 
         <div id="botones">
             <label for="enviar"></label>
             <input type="submit" name="enviar">
+
             <label for="reset"></label>
             <input type="reset" name="reset">
         </div>

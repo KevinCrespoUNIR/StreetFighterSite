@@ -5,13 +5,14 @@
 
 :root{
     box-sizing: border-box;
-    font-size: 20px;
+    margin:0;
+    padding:0;
 }
 
 body{
     background-image: url('./img/fondo2.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 h1{
@@ -28,14 +29,13 @@ table{
     border-radius: 10px;
     background-color:black;
     margin:auto;
-    
 }
 
 #cabecera-tabla{
     background-image: url('./img/fondocabecera.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    /* height: 200px; */
     font-family: 'street';
     text-align:center;
     font-size: 40px;
@@ -43,11 +43,12 @@ table{
     opacity: 0.5;
 }
 
-table td{
+table tr, table td{
     border: solid rgb(255, 0, 0) 2px;
     width: 40px;
     height: 45px;
     border: solid 2px gray;
+    border-radius: 10px;
     font-family: 'street';
     color: darkorange;
     text-align:center;
@@ -55,102 +56,105 @@ table td{
     font-weight: bold;
 }
 
+.titulo-celdas{
+    margin-bottom: 135px;
+}
+
 #KEN{
     background-image: url('./img/ken.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #CHUN{
     background-image: url('./img/ChunLi.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #ZANG{
-    background-image: url('./IMG/Zangief.png');
+    background-image: url('./img/Zangief.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #DHALSIN{
     background-image: url('./img/Dhalsim.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #RYU{
     background-image: url('./img/Ryu.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #HONDA{
     background-image: url('./img/EHonda.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #BLANKA{
     background-image: url('./img/Blanka.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #GUILLE{
     background-image: url('./img/Guille.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
-
 
 #HAWK{
     background-image: url('./img/THawk.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #FEILONG{
     background-image: url('./img/Feilong.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #DEE{
     background-image: url('./img/DeeJay.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #CAMMY{
     background-image: url('./img/Cammy.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 
 #BALROG{
     background-image: url('./img/Balrog.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #VEGA{
     background-image: url('./img/Vega.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #SAGAT{
     background-image: url('./img/Sagat.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 #MBISON{
     background-image: url('./img/MBison.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: bottom;
 }
 
 /* Formulario */
@@ -159,6 +163,7 @@ form{
     width: 600px;
     height: 1100px;
     border: 10px outset rgb(237,175,5);
+    border-radius: 10px;
     color:white;
     text-align:center;
     font-size: 16px;
@@ -174,13 +179,28 @@ legend{
     text-align:left;
 }
 
+#sexo input{
+    display:inline;
+}
+
+#fecha input{
+    display:inline;
+}
+
 input{
-    margin-bottom: 10px;
-    
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+#direccion-postal input{
+    display: inline;
+    margin-bottom: 0px;
 }
 
 textarea{
     width: 560px;
+    height: 150px;
 }
 
 h2 {
@@ -202,6 +222,7 @@ h2 {
     margin-left: 65px;
     margin-bottom: 10px;
     display:inline-block;
+    margin-top: 20px;
 }
 
 
