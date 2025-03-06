@@ -82,40 +82,66 @@
                 <p class="titulo-celdas">MBISON</p>
             </td>
         </tr>
-        </div>
         
     </table>
 
     <h2>FORMULARIO DE INSCRIPCIÓN PARA JUGAR A STREET FIGHTER</h2>
 
-    <form action="mailto:email@email.com">
+    <form action="mailto:email@email.com" method="post">
         <fieldset>
             <legend>DATOS PERSONALES</legend>
 
-            <label for="">Nombre:</label>
-            <input type="text" name="">
+            <!-- nombre-apellidos -->
+            <div class="nombre-apellidos">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
 
-            <label for="">Apellidos</label>
-            <input type="text" name="">
+            <div class="nombre-apellidos">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos">
+            </div>
 
-            <div id="direccion-postal">
-                <label for="direccion">Dirección Postal: <br>
-                    <input type="text" name="direccion" placeholder="Calle">
-                    <input type="text" name="direccion" placeholder="Nº">
-                    <input type="text" name="direccion" placeholder="Piso">
-                    <input type="text" name="direccion" placeholder="Cód. Postal">
-                    <input type="text" name="direccion" placeholder="Ciudad">
-                </label>
+            <!-- direccion -->
+            <div class="direccion-item">
+                <label for="dir-postal">Dirección Postal: </label>
+                <input type="text" name="dir-postal" id="dir-postal" placeholder="Calle">
+            </div>
+
+            <div class="direccion-item">
+                <label for="num"></label>
+                <input type="text" name="num" id="num" placeholder="Nº">
+            </div>
+
+            <div class="direccion-item">
+                <label for="piso"></label>
+                <input type="text" name="piso" id="piso" placeholder="Piso">
+            </div>
+
+            <div class="direccion-item">
+                <label for="cod-postal"></label>
+                <input type="text" name="cod-postal" id="cod-postal" placeholder="Cód. Postal">
+            </div>
+
+            <div class="direccion-item">
+                <label for="ciudad"></label>
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
             </div>
             
-            <label for="nick">Nick:</label>
-            <input type="text" name="nick">
+            <!-- nick-correo -->
+            <div class="nick-correo">
+                <label for="nick">Nick:</label>
+                <input type="text" name="nick" id="nick">
+            </div>
 
-            <label for="email">Correo Electrónico:</label>
-            <input type="text" name="email">
-        </fieldset>
+            <div class="nick-correo">
+                <label for="email">Correo Electrónico:</label>
+                <input type="text" name="email" id="email">
+            </div>
 
-        <fieldset>
+        </fieldset><!-- datos personales -->
+
+        <fieldset><!-- sexo -->
             <legend>SEXO USUARIO</legend>
 
             <div id="sexo">
@@ -131,38 +157,47 @@
                     <input type="radio" name="sexo" value="nada"> Prefiero no decirlo
                 </label>
             </div>
+
         </fieldset>
 
-        <fieldset>
-            <label for="fecha" id="fecha"> Fecha de nacimiento:
-                <input type="date" name="fecha"> 
-            </label>
+        <fieldset> <!-- fecha nacimiento -->
+            <div id="fecha">
+                <label for="fecha"> Fecha de nacimiento:
+                    <input type="date" name="fecha" id="fecha"> 
+                </label>
+            </div>
             
         </fieldset>
 
-        <fieldset>
+        <fieldset> <!-- seleccion personaje -->
             <legend>PERSONAJES</legend>
-            <label for="personaje">Selecciona el personaje:
-                <select name="opcion" id="opcion">
-                    <option value="1">KEN</option>
-                    <option value="2">CHUN U</option>
-                    <option value="3">ANGIEF</option>
+
+            <div id="seleccion-personaje">
+                <label for="personaje">Selecciona el personaje:</label>
+                <select name="personaje" id="personaje">
+                    <option value="" disabled selected>-- Selecciona un personaje --</option>
+                    <option value="ken">KEN</option>
+                    <option value="chun_li">CHUN U</option>
+                    <option value="zangief">ZANGIEF</option>
                 </select>
-            </label>
+            </div>
+
         </fieldset>
 
-        <fieldset>
+        <fieldset><!-- comentarios -->
             <legend>COMENTARIOS</legend>
-            <label for=""></label>
-            <textarea></textarea>
+
+            <div>
+                <label for="comentario"></label>
+                <textarea name="comentario" id="comentario" rows="" cols=""></textarea>
+            </div>
+
         </fieldset>
 
+        <!-- botones -->
         <div id="botones">
-            <label for="enviar"></label>
-            <input type="submit" name="enviar">
-
-            <label for="reset"></label>
-            <input type="reset" name="reset">
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+            <input type="reset" value="Borrar" name="borrar" id="borrar">
         </div>
         
     </form>

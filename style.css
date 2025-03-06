@@ -10,7 +10,8 @@
 }
 
 body{
-    background-image: url('./img/fondo2.jpg');
+    background-image: 
+        url('./img/fondo2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -32,10 +33,10 @@ table{
 }
 
 #cabecera-tabla{
-    background-image: url('./img/fondocabecera.jpg');
+    background-image: 
+        url('./img/fondocabecera.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 200px; */
     font-family: 'street';
     text-align:center;
     font-size: 40px;
@@ -157,6 +158,13 @@ table tr, table td{
     background-position: bottom;
 }
 
+h2 {
+    font-family: 'street';
+    color:crimson;
+    font-size: 28px;
+    text-align: center;
+}
+
 /* Formulario */
 form{
     background-color: black;
@@ -179,37 +187,31 @@ legend{
     text-align:left;
 }
 
+
+/* arreglar esto */
 #sexo input{
     display:inline;
 }
-
 #fecha input{
     display:inline;
 }
-
 input{
     display: block;
     margin-bottom: 15px;
     margin-top: 10px;
 }
-
 #direccion-postal input{
     display: inline;
     margin-bottom: 0px;
 }
-
 textarea{
     width: 560px;
     height: 150px;
 }
+/**/
 
-h2 {
-    font-family: 'street';
-    color:crimson;
-    font-size: 28px;
-    text-align: center;
-}
 
+/* esto está bien */
 #botones input{
     border: 1px solid crimson;
     background-color: crimson;
